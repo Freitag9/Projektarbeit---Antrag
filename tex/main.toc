@@ -1,0 +1,21 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Projektumfeld}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Witron Logistik + Informatik GmbH \& Co. KG}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Auftragserteilung}{1}{section.2}%
+\contentsline {section}{\numberline {3}Ist-Analyse}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Analyse des aktuellen Standes}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wirtschaftliche Betrachtung}{1}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Soll-Konzept}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Planung der Anforderungen}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Zeitlicher Rahmen}{1}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Entwurf}{1}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Auswahl der Technologien}{1}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Realisierung}{1}{section.6}%
+\contentsline {section}{\numberline {7}Softwaretests}{1}{section.7}%
+\contentsline {section}{\numberline {8}Fazit}{1}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Soll-Ist-Vergleich}{1}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Ausblick}{1}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Anhang}{2}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Glossar}{2}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Code}{2}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Bild}{2}{subsection.9.3}%

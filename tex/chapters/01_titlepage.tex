@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX-Vorlage zur Erstellung einer Projektarbeit 
+% (Dokumentation eines Abschlussprojekts)
+% 
+% Copyright: WITRON Logistik + Informatik GmbH & Co. KG
+% Aktuelle Fileversion: v1.0.0
+% Stand: 01.09.2025
+%
+% Changelog:
+% Version   Datum       Autor        Änderung
+% v1.0.0:   01.09.2025  NWegerer     create
+%                       & JPuehler   
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+    \noindent
+    \logo\\[0.2cm]
+    \noindent
+    \small \Firma\\
+    \small \Firmensitz\\\\
+    \small Tel.: \FirmenTel\\
+    \small Fax.: \FirmenFax\\
+    \small E-Mail: \FirmenEmail\\[2cm]
+
+    \noindent\rule{\textwidth}{1.5pt}\\
+
+    \begin{flushright}
+        {\Huge\bfseries\IhrProjektTitel}\\[1cm]
+        {\large Dokumentation zur Projektarbeit\\[0.1cm]
+                Abschlussprüfung \IhrAbschlusszeitraum\\[0.1cm]
+                \IhrAusbildungstitel}\\[3cm]
+
+        {\small Autor: \IhrVorname\ \IhrNachname\ (\IhreID)}\\
+        {\small Prüflingsnummer: \IhrePrueflingsnummer}\\
+        {\small Projektbetreuer: \IhrProjektbetreuer}\\
+        {\small Tel.: \BetreuerTelnr}\\
+        {\small Version: \IhreDokuVersion}\\
+        {\small Datum: \Datum}\\
+        
+        \vspace{1cm}
+        
+        \begin{table}[h!]
+            \raggedleft
+            \begin{tabular}{|c|r|}
+                \multicolumn{2}{r}{\textbf{Dokument Status}} \\ \hline
+                X & In Arbeit \\ \hline
+                & Entwurf \\ \hline
+                & Veröffentlicht \\ \hline
+            \end{tabular}
+        \end{table}
+        
+    \end{flushright}
+\clearpage
+
+\vspace*{4cm}
+
+\rule{\textwidth}{0.5pt}\\[0.5cm]
+\small
+    Das vorliegende Schriftstück darf ohne die schriftliche Zustimmung von WITRON weder kopiert noch ganz oder auszugsweise an Dritte weitergegeben werden. Sämtliche Copyright-Rechte für das Schriftstück liegen ausschließlich bei WITRON. \\\\
+    WITRON behält sich vor, die in dieser Dokumentation beschriebenen Produktspezifikationen jederzeit zu ändern bzw. zu korrigieren.\\\\
+    Die in diesem Schriftstück beschriebenen oder genannten Programme werden aufgrund einer Lizenzvereinbarung überlassen und dürfen nur in Übereinstimmung mit den Regelungen der Lizenzvereinbarung benutzt oder kopiert werden.\\\\
+    Sämtliche Firmen- und/oder Produktnamen sind Warenzeichen und/oder eingetragene Warenzeichen ihrer entsprechenden Inhaber.\\\\
+    © \the\year\ \Firma, 92711 Parkstein\\
+\rule{\textwidth}{0.5pt}\\[1cm]
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|p{0.8\linewidth}|}
+\hline
+\rowcolor{hellblau} \multicolumn{2}{|l|}{\textbf{Legende zu den Verweisen}} \\ \hline
+(*) & Begriff wird im Glossar unter Punkt 9.1 erklärt \\ \hline
+(→) & Allgemeiner Verweis auf den Anhang \\ \hline
+\end{tabular}
+\end{table}
+
+\vspace{1cm}
+
+\textbf{Dokumentenhistorie}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|p{0.5\linewidth}|}
+\hline
+\rowcolor{hellblau} \textbf{Datum} & \textbf{Version} & \textbf{Autor} & \textbf{Beschreibung}\\ \hline
+\Datum & 1.0.0 & EMU & Neues Dokument \\ \hline
+\Datum & 1.1.0 & EMU & Fertige Dokumentation \\ \hline
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\tableofcontents
+
+\end{titlepage}

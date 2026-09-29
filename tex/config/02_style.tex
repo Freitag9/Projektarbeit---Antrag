@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX-Vorlage zur Erstellung einer Projektarbeit 
+% (Dokumentation eines Abschlussprojekts)
+% 
+% Copyright: WITRON Logistik + Informatik GmbH & Co. KG
+% Aktuelle Fileversion: v1.0.0
+% Stand: 01.09.2025
+%
+% Changelog:
+% Version   Datum       Autor        Änderung
+% v1.0.0:   01.09.2025  NWegerer     create
+%                       & JPuehler   
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokument & Style setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PDF Setup 
+\hypersetup{pdftitle={\IhrProjektTitel},%
+            pdfauthor={\IhrVorname\ \IhrNachname},%
+            pdfsubject={\IhrProjektTitel},%
+            pdfkeywords={\IhreSchluesselwoerter}}
+            
+% Helvet als Schriftart setzen
+\renewcommand{\familydefault}{\sfdefault}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eigenes Format für Datum
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DTMnewdatestyle{dateNumericDE}{
+  \renewcommand{\DTMdisplaydate}[4]{%
+    \DTMtwodigits{##3}.\DTMtwodigits{##2}.##1%
+  }
+}
+% numerisches Datumsformat aktivieren
+\DTMsetdatestyle{dateNumericDE}
+
+% Hellblau definieren
+\definecolor{hellblau}{RGB}{150, 200, 250}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fuss- & Kopfzeilen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}							% Seitenstil 'fancy'
+\fancyhf{}									% vorhandene Einstellungen loeschen
+\setlength{\headwidth}{\textwidth}			% Kopf- und Fusszeile so breit wie der Haupttext
+
+\fancyfoot[R]{Seite \thepage} 				% Seitenzahlen in der Fusszeile rechts
+\fancyfoot[L]{\scriptsize Autor: \IhrVorname\ \IhrNachname\, 
+              Projektbetreuer: \IhrProjektbetreuer\,
+              \BetreuerTelnr\, 
+              Datum: \Datum\\
+              © \the\year\ \Firma, 92711 Parkstein\\
+              }	                          % Fusszeile links: Name, Betreuer, Datum & Copyright 
+\fancyhead[L]{\logo}                        % Kopfzeile links: Firmenlogo
+\fancyhead[R]{\IhrProjektTitel}	            % Kopfzeile rechts: Projekttitel
+
+% Definition der Ausgabe des Kapitels
+\renewcommand{\sectionmark}[1]{\markboth{Abschnitt \thesection. #1}{}} 
+\renewcommand{\headrulewidth}{0.5pt}		% Trennlinie zwischen Kopfzeile und Haupttext
+\renewcommand{\footrulewidth}{0.5pt}		% Trennlinie zwischen Haupttext und Fusszeile
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Quellcode Farbe und Stil
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!20},
+  captionpos=b,
+  tabsize=2
+}

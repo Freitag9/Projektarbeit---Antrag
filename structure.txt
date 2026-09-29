@@ -1,0 +1,31 @@
+Projektarbeit/
+│
+├── tex/                            # Hauptordner für die LaTeX-Dokumente
+│   ├── main.tex                    # Hauptdatei (von hier aus wird alles eingebunden)
+|   |
+│   ├── config/                     # Präambel, Pakete, Befehlsdefinitionen
+│   │   ├── 01_packages.tex         # Paketdefinitionen
+│   │   ├── 02_style.tex            # PDF/Seiten/Stil - Einstellungen
+│   │   ├── 03_personal_info.tex    # Vordefinierte Commands zu persönlichen Infos
+│   │   └── 04_glossaryentries.tex  # Alle Glossareinträge
+|   |
+│   ├── chapters/                   # Einzelne Kapitel als separate .tex-Dateien
+│   │   ├── 01_titlepage.tex
+│   │   ├── 02_introduction.tex
+│   │   ├── 03_implementation.tex
+│   │   ├── 04_conclusion.tex
+│   │   └── 05_appendix.tex
+|   |
+│   └── images/                     # Abbildungen für die Arbeit
+│
+├── code/                           # Quellcode des Projekts
+│   ├── src/                        # Hauptquellcode
+│   ├── src/                        # (PL/)Sql - Code
+│   ├── tests/                      # Testfälle
+│   └── docs/                       # Dokumentation des Codes
+│
+├── docs/                           # Dokumentationen, Benutzerhandbuch, Protokoll, etc.
+│
+├── data/                           # Beispieldaten, Input/Output-Dateien
+│
+└── build/                          # Kompilierte Dateien (PDF, Logs, etc.)

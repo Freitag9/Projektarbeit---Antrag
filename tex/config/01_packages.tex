@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX-Vorlage zur Erstellung einer Projektarbeit 
+% (Dokumentation eines Abschlussprojekts)
+% 
+% Copyright: WITRON Logistik + Informatik GmbH & Co. KG
+% Aktuelle Fileversion: v1.0.0
+% Stand: 01.09.2025
+%
+% Changelog:
+% Version   Datum       Autor        Änderung
+% v1.0.0:   01.09.2025  NWegerer     create
+%                       & JPuehler   
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alle Packages die verwendet werden
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{helvet}             % Ersatz für Arial-Schriftart
+\usepackage[T1]{fontenc}		% Einstellungen fuer Umlaute usw.
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}     % Deutsche Datumsformate
+\usepackage{datetime2}          % direktes numerisches Format
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{parskip}			% Einstellungen fuer Absaetze
+\usepackage[table]{xcolor}      % Für Tabellenfarben wie \rowcolor
+\usepackage{array}
+\usepackage{fancyhdr}			% Konfiguration von Kopf- und Fusszeilen
+\usepackage{listings}   	    % Quellcode includes
+\usepackage[nonumberlist,acronym]{glossaries}   % Automatische Glossarerstellung
+
+\usepackage[a4paper,			% Papierformat A4
+	    left=1.5cm,				% linker Rand
+	    right=2cm,			    % rechter Rand
+	    top=1.5cm,				% oberer Rand
+	    bottom=1.5cm,			% unter Rand
+	  marginparsep=5mm,		  % Abstand der Randnotizen
+	    marginparwidth=10mm, 	% Breite der Randnotizen
+	    headheight=7mm,			% Hoehe der Kopfzeile
+	    headsep=1.2cm,			% Abstand der Kopfzeile
+	    footskip=1.5cm,			% Abstand der Fusszeile
+	    includeheadfoot]{geometry}
+
+\usepackage[bookmarks, raiselinks, pageanchor, 
+            hyperindex, colorlinks,
+            citecolor=black, linkcolor=black,
+            urlcolor=black, filecolor=black,
+            menucolor=black]{hyperref}  % PDF-Einstellungen
