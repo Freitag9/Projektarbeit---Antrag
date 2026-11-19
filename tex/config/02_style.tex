@@ -43,25 +43,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fuss- & Kopfzeilen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{fancy}							% Seitenstil 'fancy'
-\fancyhf{}									% vorhandene Einstellungen loeschen
-\setlength{\headwidth}{\textwidth}			% Kopf- und Fusszeile so breit wie der Haupttext
+\pagestyle{fancy}   % Seitenstil 'fancy'
+\fancyhf{}  % vorhandene Einstellungen loeschen
+\setlength{\headwidth}{\textwidth}% Kopf- und Fusszeile so breit wie der Haupttext
 
-\fancyfoot[R]{Seite \thepage} 				% Seitenzahlen in der Fusszeile rechts
-\fancyfoot[L]{\scriptsize Autor: \IhrVorname\ \IhrNachname\, 
+\fancyfoot[R]{Seite \thepage} % Seitenzahlen in der Fusszeile rechts
+\fancyfoot[L]{\scriptsize Autor: \IhrVorname\ \IhrNachname\,
               Projektbetreuer: \IhrProjektbetreuer\,
-              \BetreuerTelnr\, 
+              \BetreuerTelnr\,
               Datum: \Datum\\
               © \the\year\ \Firma, 92711 Parkstein\\
-              }	                          % Fusszeile links: Name, Betreuer, Datum & Copyright 
-\fancyhead[L]{\logo}                        % Kopfzeile links: Firmenlogo
-\fancyhead[R]{\IhrProjektTitel}	            % Kopfzeile rechts: Projekttitel
+              }                          % Fusszeile links: Name, Betreuer, Datum & Copyright
+
+\fancyhead[L]{\makebox[0.20\headwidth][l]{\logo}}
+\fancyhead[R]{\parbox[b]{0.70\headwidth}{\raggedleft\scriptsize \IhrProjektTitel}}
 
 % Definition der Ausgabe des Kapitels
-\renewcommand{\sectionmark}[1]{\markboth{Abschnitt \thesection. #1}{}} 
-\renewcommand{\headrulewidth}{0.5pt}		% Trennlinie zwischen Kopfzeile und Haupttext
-\renewcommand{\footrulewidth}{0.5pt}		% Trennlinie zwischen Haupttext und Fusszeile
-
+\renewcommand{\sectionmark}[1]{\markboth{Abschnitt \thesection. #1}{}}
+\renewcommand{\headrulewidth}{0.5pt}  % Trennlinie zwischen Kopfzeile und Haupttext
+\renewcommand{\footrulewidth}{0.5pt}  % Trennlinie zwischen Haupttext und Fusszeile
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Quellcode Farbe und Stil
